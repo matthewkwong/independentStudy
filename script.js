@@ -1,15 +1,18 @@
 AOS.init({
-    duration: 1200,
+    duration: 900,
     delay: 0,
-    easing: 'ease-in-out-back'
+    easing: 'ease-in-out-back',
+    offset: -400,
 });
+
+AOS.refresh();
 
 
 $(document).ready(function () {
 
     $("#down").click(function(){
         $('html, body').animate({
-        scrollTop:$("#week1").offset().top
+        scrollTop:$("#week1").offset().top - 100
         }, 1000);
     });     
 
@@ -172,7 +175,7 @@ window.addEventListener("scroll", function() {
     }
 
     // Week 10
-    if (window.scrollY > week10.offsetTop - 400) {
+    if ((window.scrollY > week10.offsetTop - 400) )  {
         document.getElementById("timelineWeek10").style.cssText = "font-weight: 700; color: #7988FD";
     }
     else{
