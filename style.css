@@ -43,8 +43,9 @@ a:visited{
 #home  #red{
     z-index: 2;
     color: white;
-    height: 100%;
+    height: 100vh;
     width: 50%;
+
     background-color: #E63939;
 
     display: flex;
@@ -160,8 +161,10 @@ a:visited{
     }
 
     #home > #red{
-        width: 100%;
         opacity: 80%;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     #home > iframe{
