@@ -155,6 +155,10 @@ a:visited{
         font-size: 50px;
     }
 
+    #home{
+        flex-direction: column;
+    }
+
     #home > #red{
         width: 100%;
         opacity: 80%;
