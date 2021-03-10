@@ -151,10 +151,6 @@ a:visited{
     #down  path{
         fill: white;
     }
-
-    #down{
-        top: -10px;
-    }
     
     h1{
         font-size: 50px;
