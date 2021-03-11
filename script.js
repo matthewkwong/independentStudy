@@ -2,7 +2,6 @@ AOS.init({
     duration: 900,
     delay: 0,
     easing: 'ease-in-out-back',
-    offset: -400,
 });
 
 AOS.refresh();
