@@ -137,11 +137,15 @@ a:visited{
     }
 
     h1{
-        font-size: 40px;
+        font-size: 50px;
     }
 
     p{
         font-size: 15px;
+    }
+
+    #red > p{
+        font-size: 20px;
     }
 
     #timeline li{
