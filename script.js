@@ -85,7 +85,13 @@ $(document).ready(function () {
         $('html, body').animate({
         scrollTop:$("#week10").offset().top 
         }, 1000);
-    });       
+    });   
+    
+    $("#timelineReflection").click(function(){
+        $('html, body').animate({
+        scrollTop:$("#reflection").offset().top 
+        }, 1000);
+    });   
 });
 
 window.addEventListener("scroll", function() {
@@ -99,6 +105,7 @@ window.addEventListener("scroll", function() {
     const week8 = document.getElementById("week8");
     const week9 = document.getElementById("week9");
     const week10 = document.getElementById("week10");
+    const reflection = document.getElementById("reflection");
 
     // Week1 
     if ((window.scrollY > week1.offsetTop - 400) && (window.scrollY < week2.offsetTop - 400))  {
@@ -174,10 +181,18 @@ window.addEventListener("scroll", function() {
     }
 
     // Week 10
-    if ((window.scrollY > week10.offsetTop - 400) )  {
+    if ((window.scrollY > week10.offsetTop - 400) && (window.scrollY < reflection.offsetTop - 400)) {
         document.getElementById("timelineWeek10").style.cssText = "font-weight: 700; color: #7988FD";
     }
     else{
         document.getElementById("timelineWeek10").style.cssText = "font-weight: 400; color: #B7B7B7";
+    }
+
+    // Reflection
+    if ((window.scrollY > reflection.offsetTop - 400) )  {
+        document.getElementById("timelineReflection").style.cssText = "font-weight: 700; color: #7988FD";
+    }
+    else{
+        document.getElementById("timelineReflection").style.cssText = "font-weight: 400; color: #B7B7B7";
     }
 });
